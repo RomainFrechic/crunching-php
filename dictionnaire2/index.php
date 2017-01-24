@@ -42,7 +42,17 @@
 	takenW($dico);
 
 
-
+//Combien de mots contiennent la lettre « q » 
+	function takenQ($dico){
+		$val = 0;
+		foreach ($dico as $key => $value ) {
+			if(strpos($value, 'q')){
+				$val++;
+			}
+		} 
+		echo "Ce Dictionnaire contient: ".$val." de mots avec << Q >> caractères.</br>";
+	}
+	takenQ($dico);
 ?>
 </body>
 </html>
