@@ -50,7 +50,7 @@ foreach ($top as $key => $value) {
 		$valueTime++;
 		$valueTime;
 	}
-	
+
 } 
 
 // Quel est le film le plus récent ? Le plus vieux 
@@ -60,18 +60,20 @@ foreach ($top as $key => $value) {
 	$titleDate=$expl[0];
 	$filmDate = $value["im:releaseDate"]["label"];
 	$arrDate[$filmDate] = $titleDate;
-} 
-krsort($arrDate);
-$filmReset = reset($arrDate);
-$filmEnd = end($arrDate);
+}
 
-echo 'Le film le plus récent est : '.$filmReset.'</br>';
-echo 'Le film le plus vieux est : '.$filmEnd.'</br>';	
+    krsort($arrDate);
+    $filmReset = reset($arrDate);
+    $filmEnd = end($arrDate);
+
+    echo 'Le film le plus récent est : '.$filmReset.'</br>';
+    echo 'Le film le plus vieux est : '.$filmEnd.'</br>';	
 
 
 
 
-// Quelle est la catégorie de films la plus représentée 
+// Quelle est la catégorie de films la plus représentée
+
 // Quel est le réalisateur le plus présent dans le top100 
 // Combien cela coûterait-il d'acheter le top10 sur iTunes/de le louer 
 // Quel est le mois ayant vu le plus de sorties au cinéma 
